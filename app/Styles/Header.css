@@ -1,0 +1,15 @@
+.header nav{
+    height: 10vh;
+    width: 100%;
+    background-color: blueviolet;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 20px;
+    cursor: pointer;
+}
+
