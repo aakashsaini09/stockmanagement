@@ -1,17 +1,11 @@
 import {MongoClient} from "mongodb"
 import { NextResponse } from "next/server";
-
 export async function GET(request) {
-
-// Replace the uri string with your connection string.
 const uri = "mongodb+srv://mongodb:dGRDjWii0mYAJcP5@cluster0.gqdypnw.mongodb.net/";
-
 const client = new MongoClient(uri);
   try {
     const database = client.db('itsdatabase');
     const movies = database.collection('itscollection');
-
-    // Query for a movie that has the title 'Back to the Future'
     const query = {  };
     const movie = await movies.find(query);
 
